@@ -1,9 +1,9 @@
-import Notes from "./notes/page"
+
 
 export default function  Home() {
   return <>
-  <div>Home</div>
-  <Notes/>
+  <h1>Home</h1>
+
   
 </>
 };
