@@ -60,3 +60,17 @@ export const getNotess = async (categoryId?: string) => {
   return res.data;
 };
 
+export type CategoryType = {
+  
+    "id": string,
+    "name": string,
+    "description": string,
+    "createdAt": string,
+    "updatedAt": string
+  
+}
+
+export const CategoryType = async () => {
+  const res = await axios.get<CategoryType[]>('/categoty');
+  return res.data;
+};

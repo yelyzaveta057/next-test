@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { getCategories } from '@/lib/api';
-import CategoriesMenu from './CategoriesMenu/CategoriesMenu';
+import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
 import css from "./Header.module.css";
 
 const Header = async () => {

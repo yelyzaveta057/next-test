@@ -1,6 +1,5 @@
 // app/notes/page.tsx
-
-import NoteList from "@/components/header/NoteList/NoteList";
+import NoteList from "@/components/NoteList/NoteList";
 import { getNotes } from "@/lib/api";
 
 const Notes = async () => {
