@@ -6,8 +6,8 @@ const NotesSidebar = async () => {
   const categories = await getCategories();
 
   return (
-    <ul>
-      <li>
+    <ul style={{listStyle:'none'}}>
+      <li >
         <Link href={`/notes/filter/all`}>All notes</Link>
       </li>
       {categories.map((category) => (
