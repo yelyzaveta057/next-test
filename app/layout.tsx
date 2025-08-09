@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header/Header";
+import Header from "@/components/header/Header";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
 
 
@@ -24,8 +24,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  preview,
 }: Readonly<{
   children: React.ReactNode;
+  preview: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -34,6 +36,11 @@ export default function RootLayout({
         <Header />
 
         <main>{children}</main>
+        <hr/>
+        {preview}
+
+
+
         <footer>
         
           <p>
