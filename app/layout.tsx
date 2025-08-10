@@ -36,8 +36,8 @@ export default function RootLayout({
         <Header />
 
         <main>{children}</main>
-        <hr/>
         {preview}
+    
 
 
 

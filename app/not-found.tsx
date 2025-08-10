@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation';
 const NotFound = () => {
   const router = useRouter();
 
+
   useEffect(() => {
     // Редірект через 3 секунди
     const timer = setTimeout(() => router.push('/'), 3000);
